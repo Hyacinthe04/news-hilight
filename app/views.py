@@ -4,8 +4,11 @@ from app import app
 from .request import get_sources,get_source
 from .request import get_articles,get_article
 
-@app.route('source/name')
-def index():
+@app.route('/source/<name>')
+def source(name):
+
+@app.route('/article/<id>')
+def article(author):
 
     '''
     View source page function that returns the source details page and its data
