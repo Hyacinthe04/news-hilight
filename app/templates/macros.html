@@ -4,15 +4,13 @@
 <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 source-card">
     <!-- <img src="{{ source.description }}" alt="{{ source.name }} > -->
     <li class="text-center">
-            <h3>{{ source.name }}</h3>
-            <p>{{ source.description }}</p>
-           
-        <a href="/source/{{source.name}}">
-            {{ source.title|truncate(10)}}</a>
+        <h3>{{ source.name }}</h3>
+        <p>{{ source.description }}</p>
+
+        <a href="/article/{{source.id}}">
+            Read More</a>
     </li>
 </div>
 {% endfor %}
 
 {% endmacro %}
-
-
