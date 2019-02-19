@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title> {{ title }}</title>
+        {% else %}
+        <title> Welcome to the best news Review website </title>
+        {% endif %}
+    </head>
+   <!-- Content block -->
+{% block content %}
+
+<!-- Popular movie -->
+<h3> business Sources</h3>
+<ul>
+    {{ macro.displaySourceList(business)}}
+</ul>
+<!-- Upcoming movie  -->
+<h3> technology Sources </h3>
+<ul>
+    {{ macro.displaySourceList(technology)}}
+</ul>
+<!-- Now showing movie -->
+<h3>sports</h3>
+<ul>
+    {{ macro.displaySourceList(sports)}}
+</ul>
+
+
+{% endblock%}
+</html>
