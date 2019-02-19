@@ -2,8 +2,9 @@ from flask import render_template
 from app import app
 # from .request import get_sources
 from .request import get_sources,get_source
+from .request import get_articles,get_article
 
-@app.route('/')
+@app.route('source/name')
 def index():
 
     '''
@@ -12,6 +13,15 @@ def index():
    #  source = get_source(name)
    #  title = f'{source.title}'
   # Getting popular source
+    business_sources = get_sources('business')
+    technology_sources = get_sources('technology')
+    sports_sources = get_sources('sports')
+    title = 'Home - Welcome to The best Source Review Website Online'
+    return render_template('index.html', title = title, business = business_sources, technology = technology_sources, sports =  sports_sources )
+
+  #  article = get_article(id)
+   #  title = f'{article.title}'
+  # Getting popular article
     business_sources = get_sources('business')
     technology_sources = get_sources('technology')
     sports_sources = get_sources('sports')
