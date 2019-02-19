@@ -99,24 +99,24 @@ def process_articles(article_list):
     return article_results
 
 
-# def get_source(name):
-#     get_source_details_url = base_url.format(name,api_key)
+def get_source(name):
+    get_source_details_url = base_url.format(name,api_key)
 
-#     with urllib.request.urlopen(get_source_details_url) as url:
-#         source_details_data = url.read()
-#         source_details_response = json.loads(source_details_data)
+    with urllib.request.urlopen(get_source_details_url) as url:
+        source_details_data = url.read()
+        source_details_response = json.loads(source_details_data)
 
-#         source_object = None
-#         if source_details_response:
-#             name = source_details_response.get('name')
-#             description = source_details_response.get('description')
-#             url = source_details_response.get('url')
-#             category = source_details_response.get('category')
+        source_object = None
+        if source_details_response:
+            name = source_details_response.get('name')
+            description = source_details_response.get('description')
+            url = source_details_response.get('url')
+            category = source_details_response.get('category')
             
 
-#             source_object = Source(name,description,url,category)
+            source_object = Source(name,description,url,category)
 
-#     return source_object
+    return source_object
 def get_article(author):
     get_article_details_url = base_url.format(name,api_key)
 
