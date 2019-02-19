@@ -31,6 +31,6 @@ def article(author):
     article = get_articles(source_name)
     title = f'{source_name}'
 
-   return render_template('article.html',articles = articles)
+   return render_template('index.html',title = title,article = article)
   
    
