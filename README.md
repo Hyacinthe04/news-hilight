@@ -8,7 +8,10 @@ Hyacinthe Ndayiragije
  You will hence create an application that will help them list and preview news articles from various sources.   
 
 # project setup instructions
--ubuntu -google chrome -js code -bootstrap
+-ubuntu 
+-google chrome 
+-js code 
+-bootstrap
 
 link to live site on GitHub Pages
 https://github.com/Hyacinthe04/quotes-ip
