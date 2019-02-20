@@ -5,9 +5,7 @@ news-hilight
 Hyacinthe Ndayiragije
 
 #description of project
-project is to create an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. user I would like to:
-
-Create a new quote. Upvote or downvote a quote. Delete a quote See the number of upvotes and number of downvotes for each quote
+In context, your parents are busy workers and they get home really late. They always miss the news and they are very frustrated since they can't keep up with current affairs. You are a developer and will use your skills and prowess to remedy this problem. You will hence create an application that will help them list and preview news articles from various sources.   
 
 project setup instructions
 -ubuntu -google chrome -js code -bootstrap
