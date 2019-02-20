@@ -13,8 +13,8 @@ Hyacinthe Ndayiragije
 -js code 
 -bootstrap
 
-link to live site on GitHub Pages
-https://github.com/Hyacinthe04/quotes-ip
+# link to live site on GitHub Pages
+https://github.com/Hyacinthe04/news-hilight
 
 copyright and license information
 This project is licensed under the MIT license.
